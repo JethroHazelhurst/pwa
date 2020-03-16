@@ -20,6 +20,10 @@ class CreateTasksTable extends Migration
             $table->integer('user_id');
             $table->integer('order');
             $table->timestamps();
+            $table->softDeletes();
+            
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('category_id')->references('id')->on('categories');
         });
     }
 

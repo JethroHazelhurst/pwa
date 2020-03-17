@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return 'Hello';
-});
+/**
+ * Vue app entry point
+ */
+Route::get('/{any}', 'SinglePageController@index')->where('any', '.*');

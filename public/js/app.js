@@ -16503,10 +16503,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
 /* harmony import */ var _views_App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./views/App */ "./resources/js/views/App.vue");
-/* harmony import */ var _views_Welcome__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./views/Welcome */ "./resources/js/views/Welcome.vue");
+!(function webpackMissingModule() { var e = new Error("Cannot find module './views/Board'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+!(function webpackMissingModule() { var e = new Error("Cannot find module './views/Login'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+!(function webpackMissingModule() { var e = new Error("Cannot find module './views/Register'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var _views_Welcome__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./views/Welcome */ "./resources/js/views/Welcome.vue");
 
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
+
+
+
 
 
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
@@ -16514,7 +16520,19 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   routes: [{
     path: '/',
     name: 'home',
-    component: _views_Welcome__WEBPACK_IMPORTED_MODULE_3__["default"]
+    component: _views_Welcome__WEBPACK_IMPORTED_MODULE_4__["default"]
+  }, {
+    path: '/login',
+    name: 'login',
+    component: !(function webpackMissingModule() { var e = new Error("Cannot find module './views/Login'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
+  }, {
+    path: '/register',
+    name: 'register',
+    component: !(function webpackMissingModule() { var e = new Error("Cannot find module './views/Register'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
+  }, {
+    path: '/board',
+    name: 'board',
+    component: !(function webpackMissingModule() { var e = new Error("Cannot find module './views/Board'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
   }]
 });
 var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({

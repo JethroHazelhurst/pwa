@@ -6,6 +6,16 @@ use Illuminate\Support\Facades\Route;
 /**
  *
  */
+Route::post('login', 'UserController@login');
+
+/**
+ *
+ */
+Route::post('register', 'UserController@register');
+
+/**
+ *
+ */
 Route::resource('/task', 'TaskController');
 
 /**
